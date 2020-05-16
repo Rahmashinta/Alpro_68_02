@@ -33,17 +33,14 @@ public class bilanganprima {
                      int a = 3;
                      int b;
                      b = bil % a;
-                     if(b == 0){
+                     while ( b == 0){
+                         a++;
+                         b = bil% a;
                          System.out.println("bukan");
-                     }else{
-                         a = a+ 1;
-                         b = bil % a;
-                         while(b == 0){
-                             a++;
-                             b = bil % a;
-                             
-                         }  System.out.println("p");
                      }
+                     b = bil % a;
+                     while(bil != b);
+                     System.out.println("bukan");
                 }
             }
         }
