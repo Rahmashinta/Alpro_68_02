@@ -19,30 +19,6 @@ public class bilanganprima {
         System.out.println("masukkan bilangan");
         bil = sc.nextInt();
         
-        if (bil < 2){
-            System.out.println("bukan");
-        }else{
-            if (bil == 2){
-                System.out.println("prima");
-            }else{
-                int y = 2;
-                int z = bil % y;
-                if ( z == 0){
-                    System.out.println("bukan");
-                }else{
-                     int a = 3;
-                     int b;
-                     b = bil % a;
-                     while ( b == 0){
-                         a++;
-                         b = bil% a;
-                         System.out.println("bukan");
-                     }
-                     b = bil % a;
-                     while(bil != b);
-                     System.out.println("bukan");
-                }
-            }
-        }
+       
     }
 }
