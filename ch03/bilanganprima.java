@@ -16,9 +16,24 @@ public class bilanganprima {
         int bil;
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("masukkan bilangan");
+        System.out.print("masukkan bilangan yang ingin dicek : ");
         bil = sc.nextInt();
         
-       
+        int z;
+        int p = 0;
+        boolean prima = true;
+        for (int a = 2; a <= bil; a++){
+            z = bil % a;
+            if(z == 0){
+                p++;
+                }
+            }
+        if ( p == 1 ){
+            System.out.println(bil + " adalah bilangan prima");
+        }else{
+            System.out.println(bil + " bukan bilangan prima");
+        }
+        System.out.println();
     }
+        
 }
